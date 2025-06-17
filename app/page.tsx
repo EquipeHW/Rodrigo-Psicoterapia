@@ -163,7 +163,7 @@ export default function PsicologoSite() {
       </header>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 lg:pt-40 lg:pb-32 relative overflow-hidden" id="home">
+      <section className="pt-32 pb-20 lg:pt-36 lg:pb-28 relative overflow-hidden" id="home">
         {/* Elementos decorativos de fundo */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-blue-50 rounded-full translate-x-1/2 -translate-y-1/2 opacity-50"></div>
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-50 rounded-full -translate-x-1/2 translate-y-1/2 opacity-50"></div>
