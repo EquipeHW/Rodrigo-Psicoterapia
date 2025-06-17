@@ -203,14 +203,14 @@ export default function PsicologoSite() {
               <div className="relative flex justify-center lg:justify-end">
                 <div className="relative">
                   {/* Fundo minimalista */}
-                  <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full bg-blue-100 relative overflow-hidden">
+                  <div className="w-72 h-72 sm:w-56  sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 xl:w-[36rem] xl:h-[36rem] rounded-full bg-gray-100 relative overflow-hidden shadow-xl md:shadow-2xl flex items-center justify-center">
                     {/* Área central para a foto */}
                     <div className="absolute inset-0">
                       <Image
                         src="/rodrigo2.jpg"
                         alt="Psicólogo Rodrigo Lübke"
-                        width={500}
-                        height={500}
+                        width={800}
+                        height={800}
                         className="w-full h-full object-cover object-[center_30%]"
                       />
                     </div>
@@ -229,84 +229,100 @@ export default function PsicologoSite() {
         </div>
       </section>
 
-      {/* Tratamentos Section */}
-      <section className="py-24 bg-white relative overflow-hidden" id="tratamentos">
+    {/* Tratamentos Section */}
+      <section className="py-16 md:py-24 bg-white relative overflow-hidden" id="tratamentos">
         {/* Elementos decorativos de fundo */}
-        <div className="absolute top-0 left-0 w-80 h-80 bg-blue-50 rounded-full -translate-x-1/2 -translate-y-1/2 opacity-50"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-50 rounded-full translate-x-1/2 translate-y-1/2 opacity-50"></div>
-        <div className="absolute top-1/3 right-1/4 w-24 h-24 bg-blue-100 rounded-full opacity-30"></div>
+        <div className="absolute top-0 left-0 w-48 h-48 md:w-80 md:h-80 bg-blue-50 rounded-full -translate-x-1/2 -translate-y-1/2 opacity-50"></div>
+        <div className="absolute bottom-0 right-0 w-64 h-64 md:w-96 md:h-96 bg-blue-50 rounded-full translate-x-1/2 translate-y-1/2 opacity-50"></div>
+        <div className="absolute top-1/3 right-1/4 w-16 h-16 md:w-24 md:h-24 bg-blue-100 rounded-full opacity-30"></div>
 
-        <div className="container mx-auto px-4 lg:px-6 relative">
-          <div className="max-w-4xl mx-auto text-center mb-20">
-            <h2 className="text-3xl lg:text-4xl font-light mb-8" style={{ color: "#002147" }}>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="max-w-4xl mx-auto text-center mb-12 md:mb-20">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light mb-6 md:mb-8" style={{ color: "#002147" }}>
               Áreas de Tratamento
             </h2>
-            <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-5xl mx-auto">
               A psicoterapia é um caminho para compreender suas emoções, lidar com desafios e construir uma vida mais
               autêntica e equilibrada. Com o psicólogo Rodrigo Lübke, você encontra um espaço seguro para transformar
               sua rotina emocional e recuperar seu bem-estar.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            <Card className="group hover:shadow-md transition-all duration-300 border-blue-100 bg-white">
-              <CardHeader className="text-center pb-6">
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-200 transition-colors">
-                  <Zap className="h-6 w-6" style={{ color: "#002147" }} />
-                </div>
-                <CardTitle className="text-gray-900 font-medium">Ansiedade e Estresse</CardTitle>
-              </CardHeader>
-            </Card>
+          {/* Container flexível com centralização */}
+          <div className="flex flex-wrap justify-center -mx-3 mb-12 md:mb-16">
+            {/* Card 1 */}
+            <div className="w-full sm:w-1/2 lg:w-1/3 px-3 mb-6">
+              <Card className="group hover:shadow-md transition-all duration-300 border-blue-100 bg-white h-full">
+                <CardHeader className="text-center pb-6">
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-200 transition-colors">
+                    <Zap className="h-6 w-6" style={{ color: "#002147" }} />
+                  </div>
+                  <CardTitle className="text-gray-900 font-medium">Ansiedade e Estresse</CardTitle>
+                </CardHeader>
+              </Card>
+            </div>
 
-            <Card className="group hover:shadow-md transition-all duration-300 border-blue-100 bg-white">
-              <CardHeader className="text-center pb-6">
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-200 transition-colors">
-                  <Heart className="h-6 w-6" style={{ color: "#002147" }} />
-                </div>
-                <CardTitle className="text-gray-900 font-medium">Baixa Autoestima e Autocrítica</CardTitle>
-              </CardHeader>
-            </Card>
+            {/* Card 2 */}
+            <div className="w-full sm:w-1/2 lg:w-1/3 px-3 mb-6">
+              <Card className="group hover:shadow-md transition-all duration-300 border-blue-100 bg-white h-full">
+                <CardHeader className="text-center pb-6">
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-200 transition-colors">
+                    <Heart className="h-6 w-6" style={{ color: "#002147" }} />
+                  </div>
+                  <CardTitle className="text-gray-900 font-medium">Baixa Autoestima e Autocrítica</CardTitle>
+                </CardHeader>
+              </Card>
+            </div>
 
-            <Card className="group hover:shadow-md transition-all duration-300 border-blue-100 bg-white">
-              <CardHeader className="text-center pb-6">
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-200 transition-colors">
-                  <Focus className="h-6 w-6" style={{ color: "#002147" }} />
-                </div>
-                <CardTitle className="text-gray-900 font-medium">TDAH e Dificuldades de Foco</CardTitle>
-              </CardHeader>
-            </Card>
+            {/* Card 3 */}
+            <div className="w-full sm:w-1/2 lg:w-1/3 px-3 mb-6">
+              <Card className="group hover:shadow-md transition-all duration-300 border-blue-100 bg-white h-full">
+                <CardHeader className="text-center pb-6">
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-200 transition-colors">
+                    <Focus className="h-6 w-6" style={{ color: "#002147" }} />
+                  </div>
+                  <CardTitle className="text-gray-900 font-medium">TDAH e Dificuldades de Foco</CardTitle>
+                </CardHeader>
+              </Card>
+            </div>
 
-            <Card className="group hover:shadow-md transition-all duration-300 border-blue-100 bg-white">
-              <CardHeader className="text-center pb-6">
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-200 transition-colors">
-                  <ArrowRight className="h-6 w-6" style={{ color: "#002147" }} />
-                </div>
-                <CardTitle className="text-gray-900 font-medium">Fases de Transição</CardTitle>
-              </CardHeader>
-            </Card>
+            {/* Card 4 */}
+            <div className="w-full sm:w-1/2 lg:w-1/3 px-3 mb-6">
+              <Card className="group hover:shadow-md transition-all duration-300 border-blue-100 bg-white h-full">
+                <CardHeader className="text-center pb-6">
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-200 transition-colors">
+                    <ArrowRight className="h-6 w-6" style={{ color: "#002147" }} />
+                  </div>
+                  <CardTitle className="text-gray-900 font-medium">Fases de Transição</CardTitle>
+                </CardHeader>
+              </Card>
+            </div>
 
-            <Card className="group hover:shadow-md transition-all duration-300 border-blue-100 bg-white md:col-span-2 lg:col-span-1">
-              <CardHeader className="text-center pb-6">
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-200 transition-colors">
-                  <Shield className="h-6 w-6" style={{ color: "#002147" }} />
-                </div>
-                <CardTitle className="text-gray-900 font-medium">Descontrole Emocional e Hábitos Nocivos</CardTitle>
-              </CardHeader>
-            </Card>
+            {/* Card 5 - Ocupa 1 coluna em todas as telas (removido md:col-span-2 lg:col-span-1) */}
+            <div className="w-full sm:w-1/2 lg:w-1/3 px-3 mb-6">
+              <Card className="group hover:shadow-md transition-all duration-300 border-blue-100 bg-white h-full">
+                <CardHeader className="text-center pb-6">
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-200 transition-colors">
+                    <Shield className="h-6 w-6" style={{ color: "#002147" }} />
+                  </div>
+                  <CardTitle className="text-gray-900 font-medium">Descontrole Emocional e Hábitos Nocivos</CardTitle>
+                </CardHeader>
+              </Card>
+            </div>
           </div>
 
-          <div className="bg-blue-50 rounded-xl p-8 mb-12">
-            <div className="flex items-center justify-center mb-4">
+          <div className="bg-blue-50 rounded-xl p-6 md:p-8 mb-8 md:mb-12">
+            <div className="flex items-center justify-center mb-3 md:mb-4">
               <Video className="h-5 w-5 mr-2" style={{ color: "#002147" }} />
               <span className="text-gray-800 font-medium">Atendimento Flexível</span>
             </div>
-            <p className="text-center text-gray-600">Sessões online via Google Meet ou presenciais em Sinop - MT</p>
+            <p className="text-center text-sm md:text-base text-gray-600">Sessões online via Google Meet ou presenciais em Sinop - MT</p>
           </div>
 
           <div className="text-center">
             <Button
               size="lg"
-              className="text-white px-8 py-4 text-lg font-medium rounded-lg transition-all duration-300"
+              className="text-white px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-medium rounded-lg transition-all duration-300"
               style={{ backgroundColor: "#002147" }}
               onClick={() => window.open(whatsappUrl, "_blank")}
               onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => (e.currentTarget.style.backgroundColor = "#001a36")}
@@ -319,89 +335,105 @@ export default function PsicologoSite() {
         </div>
       </section>
 
-      {/* Diferenciais Section */}
-      <section className="py-24 bg-blue-50 relative overflow-hidden" id="diferenciais">
-        {/* Elementos decorativos de fundo */}
-        <div className="absolute top-0 right-0 w-72 h-72 bg-white rounded-full translate-x-1/2 -translate-y-1/2 opacity-50"></div>
-        <div className="absolute bottom-0 left-0 w-64 h-64 bg-white rounded-full -translate-x-1/2 translate-y-1/2 opacity-50"></div>
-        <div className="absolute top-1/2 left-1/3 w-20 h-20 bg-blue-100 rounded-full opacity-30"></div>
+    {/* Diferenciais Section */}
+<section className="py-16 md:py-24 bg-blue-50 relative overflow-hidden" id="diferenciais">
+  {/* Elementos decorativos de fundo */}
+  <div className="absolute top-0 right-0 w-48 h-48 md:w-72 md:h-72 bg-white rounded-full translate-x-1/2 -translate-y-1/2 opacity-50"></div>
+  <div className="absolute bottom-0 left-0 w-40 h-40 md:w-64 md:h-64 bg-white rounded-full -translate-x-1/2 translate-y-1/2 opacity-50"></div>
+  <div className="absolute top-1/2 left-1/3 w-16 h-16 md:w-20 md:h-20 bg-blue-100 rounded-full opacity-30"></div>
 
-        <div className="container mx-auto px-4 lg:px-6 relative">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl lg:text-4xl font-light text-center mb-20" style={{ color: "#002147" }}>
-              Meus Diferenciais
-            </h2>
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <div className="max-w-5xl mx-auto">
+      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-center mb-12 md:mb-20" style={{ color: "#002147" }}>
+        Meus Diferenciais
+      </h2>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-              <Card className="group hover:shadow-md transition-all duration-300 bg-white border-blue-100">
-                <CardHeader>
-                  <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors">
-                    <Brain className="h-5 w-5" style={{ color: "#002147" }} />
-                  </div>
-                  <CardTitle className="text-gray-900 font-medium mb-2">Abordagem Integrada</CardTitle>
-                  <CardDescription className="text-gray-500">TCC + ACT</CardDescription>
-                </CardHeader>
-              </Card>
-
-              <Card className="group hover:shadow-md transition-all duration-300 bg-white border-blue-100">
-                <CardHeader>
-                  <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors">
-                    <Target className="h-5 w-5" style={{ color: "#002147" }} />
-                  </div>
-                  <CardTitle className="text-gray-900 font-medium">Plano Terapêutico Personalizado</CardTitle>
-                </CardHeader>
-              </Card>
-
-              <Card className="group hover:shadow-md transition-all duration-300 bg-white border-blue-100">
-                <CardHeader>
-                  <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors">
-                    <CheckCircle className="h-5 w-5" style={{ color: "#002147" }} />
-                  </div>
-                  <CardTitle className="text-gray-900 font-medium">Avaliação Neuropsicológica</CardTitle>
-                </CardHeader>
-              </Card>
-
-              <Card className="group hover:shadow-md transition-all duration-300 bg-white border-blue-100">
-                <CardHeader>
-                  <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors">
-                    <UserCheck className="h-5 w-5" style={{ color: "#002147" }} />
-                  </div>
-                  <CardTitle className="text-gray-900 font-medium">Autonomia do Paciente</CardTitle>
-                </CardHeader>
-              </Card>
-
-              <Card className="group hover:shadow-md transition-all duration-300 bg-white border-blue-100 md:col-span-2 lg:col-span-1">
-                <CardHeader>
-                  <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors">
-                    <MessageCircle className="h-5 w-5" style={{ color: "#002147" }} />
-                  </div>
-                  <CardTitle className="text-gray-900 font-medium">Comunicação Transparente</CardTitle>
-                </CardHeader>
-              </Card>
-            </div>
-
-            <div className="text-center">
-              <Button
-                variant="outline"
-                size="lg"
-                className="px-8 py-4 text-lg font-medium rounded-lg transition-all duration-300"
-                style={{ borderColor: "#002147", color: "#002147" }}
-                onClick={() => window.open(whatsappUrl, "_blank")}
-                onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => {
-                  e.currentTarget.style.backgroundColor = "#002147"
-                  e.currentTarget.style.color = "white"
-                }}
-                onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => {
-                  e.currentTarget.style.backgroundColor = "transparent"
-                  e.currentTarget.style.color = "#002147"
-                }}
-              >
-                Conheça os diferenciais
-              </Button>
-            </div>
-          </div>
+      {/* Container flexível com centralização */}
+      <div className="flex flex-wrap justify-center -mx-3 mb-12 md:mb-16">
+        {/* Card 1 */}
+        <div className="w-full sm:w-1/2 lg:w-1/3 px-3 mb-6">
+          <Card className="group hover:shadow-md transition-all duration-300 bg-white border-blue-100 h-full">
+            <CardHeader>
+              <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors">
+                <Brain className="h-5 w-5" style={{ color: "#002147" }} />
+              </div>
+              <CardTitle className="text-gray-900 font-medium mb-2">Abordagem Integrada</CardTitle>
+              <CardDescription className="text-gray-500">TCC + ACT</CardDescription>
+            </CardHeader>
+          </Card>
         </div>
-      </section>
+
+        {/* Card 2 */}
+        <div className="w-full sm:w-1/2 lg:w-1/3 px-3 mb-6">
+          <Card className="group hover:shadow-md transition-all duration-300 bg-white border-blue-100 h-full">
+            <CardHeader>
+              <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors">
+                <Target className="h-5 w-5" style={{ color: "#002147" }} />
+              </div>
+              <CardTitle className="text-gray-900 font-medium">Plano Terapêutico Personalizado</CardTitle>
+            </CardHeader>
+          </Card>
+        </div>
+
+        {/* Card 3 */}
+        <div className="w-full sm:w-1/2 lg:w-1/3 px-3 mb-6">
+          <Card className="group hover:shadow-md transition-all duration-300 bg-white border-blue-100 h-full">
+            <CardHeader>
+              <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors">
+                <CheckCircle className="h-5 w-5" style={{ color: "#002147" }} />
+              </div>
+              <CardTitle className="text-gray-900 font-medium">Avaliação Neuropsicológica</CardTitle>
+            </CardHeader>
+          </Card>
+        </div>
+
+        {/* Card 4 */}
+        <div className="w-full sm:w-1/2 lg:w-1/3 px-3 mb-6">
+          <Card className="group hover:shadow-md transition-all duration-300 bg-white border-blue-100 h-full">
+            <CardHeader>
+              <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors">
+                <UserCheck className="h-5 w-5" style={{ color: "#002147" }} />
+              </div>
+              <CardTitle className="text-gray-900 font-medium">Autonomia do Paciente</CardTitle>
+            </CardHeader>
+          </Card>
+        </div>
+
+        {/* Card 5 - Ocupa 1 coluna em todas as telas */}
+        <div className="w-full sm:w-1/2 lg:w-1/3 px-3 mb-6">
+          <Card className="group hover:shadow-md transition-all duration-300 bg-white border-blue-100 h-full">
+            <CardHeader>
+              <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors">
+                <MessageCircle className="h-5 w-5" style={{ color: "#002147" }} />
+              </div>
+              <CardTitle className="text-gray-900 font-medium">Comunicação Transparente</CardTitle>
+            </CardHeader>
+          </Card>
+        </div>
+      </div>
+
+      <div className="text-center">
+        <Button
+          variant="outline"
+          size="lg"
+          className="px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-medium rounded-lg transition-all duration-300"
+          style={{ borderColor: "#002147", color: "#002147" }}
+          onClick={() => window.open(whatsappUrl, "_blank")}
+          onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => {
+            e.currentTarget.style.backgroundColor = "#002147"
+            e.currentTarget.style.color = "white"
+          }}
+          onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => {
+            e.currentTarget.style.backgroundColor = "transparent"
+            e.currentTarget.style.color = "#002147"
+          }}
+        >
+          Conheça os diferenciais
+        </Button>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Sobre Section */}
       <section className="py-24 bg-white relative overflow-hidden" id="sobre">
