@@ -89,8 +89,8 @@ export default function PsicologoSite() {
                 className="text-white px-6 py-2 rounded-lg font-medium transition-all duration-300"
                 style={{ backgroundColor: "#002147" }}
                 onClick={() => window.open(whatsappUrl, "_blank")}
-                onMouseEnter={(e) => (e.target.style.backgroundColor = "#001a36")}
-                onMouseLeave={(e) => (e.target.style.backgroundColor = "#002147")}
+                onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => (e.currentTarget.style.backgroundColor = "#001a36")}
+                onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => (e.currentTarget.style.backgroundColor = "#002147")}
               >
                 <MessageCircle className="mr-2 h-4 w-4" />
                 Agendar Consulta
@@ -191,11 +191,11 @@ export default function PsicologoSite() {
                   className="text-white px-8 py-4 text-lg font-medium rounded-lg transition-all duration-300"
                   style={{ backgroundColor: "#002147" }}
                   onClick={() => window.open(whatsappUrl, "_blank")}
-                  onMouseEnter={(e) => (e.target.style.backgroundColor = "#001a36")}
-                  onMouseLeave={(e) => (e.target.style.backgroundColor = "#002147")}
+                  onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => (e.currentTarget.style.backgroundColor = "#001a36")}
+                  onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => (e.currentTarget.style.backgroundColor = "#002147")}
                 >
                   <MessageCircle className="mr-2 h-5 w-5" />
-                  Agende sua consulta pelo WhatsApp
+                  Agendar consulta
                 </Button>
               </div>
 
@@ -209,8 +209,8 @@ export default function PsicologoSite() {
                       <Image
                         src="/rodrigo2.jpg"
                         alt="Psicólogo Rodrigo Lübke"
-                        width={400}
-                        height={400}
+                        width={500}
+                        height={500}
                         className="w-full h-full object-cover object-[center_30%]"
                       />
                     </div>
@@ -309,11 +309,11 @@ export default function PsicologoSite() {
               className="text-white px-8 py-4 text-lg font-medium rounded-lg transition-all duration-300"
               style={{ backgroundColor: "#002147" }}
               onClick={() => window.open(whatsappUrl, "_blank")}
-              onMouseEnter={(e) => (e.target.style.backgroundColor = "#001a36")}
-              onMouseLeave={(e) => (e.target.style.backgroundColor = "#002147")}
+              onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => (e.currentTarget.style.backgroundColor = "#001a36")}
+              onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => (e.currentTarget.style.backgroundColor = "#002147")}
             >
               <MessageCircle className="mr-2 h-5 w-5" />
-              Agende sua consulta pelo WhatsApp
+              Agendar consulta
             </Button>
           </div>
         </div>
@@ -327,7 +327,7 @@ export default function PsicologoSite() {
         <div className="absolute top-1/2 left-1/3 w-20 h-20 bg-blue-100 rounded-full opacity-30"></div>
 
         <div className="container mx-auto px-4 lg:px-6 relative">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-light text-center mb-20" style={{ color: "#002147" }}>
               Meus Diferenciais
             </h2>
@@ -386,13 +386,14 @@ export default function PsicologoSite() {
                 size="lg"
                 className="px-8 py-4 text-lg font-medium rounded-lg transition-all duration-300"
                 style={{ borderColor: "#002147", color: "#002147" }}
-                onMouseEnter={(e) => {
-                  e.target.style.backgroundColor = "#002147"
-                  e.target.style.color = "white"
+                onClick={() => window.open(whatsappUrl, "_blank")}
+                onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => {
+                  e.currentTarget.style.backgroundColor = "#002147"
+                  e.currentTarget.style.color = "white"
                 }}
-                onMouseLeave={(e) => {
-                  e.target.style.backgroundColor = "transparent"
-                  e.target.style.color = "#002147"
+                onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => {
+                  e.currentTarget.style.backgroundColor = "transparent"
+                  e.currentTarget.style.color = "#002147"
                 }}
               >
                 Conheça os diferenciais
@@ -454,11 +455,11 @@ export default function PsicologoSite() {
                     className="text-white px-8 py-4 text-lg font-medium rounded-lg transition-all duration-300"
                     style={{ backgroundColor: "#002147" }}
                     onClick={() => window.open(whatsappUrl, "_blank")}
-                    onMouseEnter={(e) => (e.target.style.backgroundColor = "#001a36")}
-                    onMouseLeave={(e) => (e.target.style.backgroundColor = "#002147")}
+                    onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => (e.currentTarget.style.backgroundColor = "#001a36")}
+                    onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => (e.currentTarget.style.backgroundColor = "#002147")}
                   >
                     <MessageCircle className="mr-2 h-5 w-5" />
-                    Agende sua consulta pelo WhatsApp
+                    Agendar consulta
                   </Button>
                
                 </div>
@@ -678,11 +679,11 @@ export default function PsicologoSite() {
                 className="text-white px-8 py-4 text-lg font-medium rounded-lg transition-all duration-300"
                 style={{ backgroundColor: "#002147" }}
                 onClick={() => window.open(whatsappUrl, "_blank")}
-                onMouseEnter={(e) => (e.target.style.backgroundColor = "#001a36")}
-                onMouseLeave={(e) => (e.target.style.backgroundColor = "#002147")}
+                onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => (e.currentTarget.style.backgroundColor = "#001a36")}
+                onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => (e.currentTarget.style.backgroundColor = "#002147")}
               >
                 <MessageCircle className="mr-2 h-5 w-5" />
-                Agende sua consulta pelo WhatsApp
+               Agendar consulta
               </Button>
             </div>
           </div>
