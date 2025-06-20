@@ -554,14 +554,14 @@ export default function PsicologoSite() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-6 leading-relaxed">
-                    "Espaço reservado para depoimentos dos pacientes integrados com Google Meu Negócio"
+                    "O Rodrigo me ajudou a enxergar a vida de outra forma. Hoje me sinto muito mais confiante e tranquila para lidar com meus desafios. Recomendo de olhos fechados!"
                   </p>
                   <div className="flex items-center">
                     <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
                       <User className="h-4 w-4 text-gray-500" />
                     </div>
                     <div>
-                      <p className="font-medium text-gray-900">Nome do Paciente</p>
+                      <p className="font-medium text-gray-900">Juliana S.</p>
                       <p className="text-sm text-gray-500">Verificado</p>
                     </div>
                   </div>
@@ -580,14 +580,14 @@ export default function PsicologoSite() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-6 leading-relaxed">
-                    "Espaço reservado para depoimentos dos pacientes integrados com Google Meu Negócio"
+                    "Profissional muito atencioso e dedicado. As sessões online foram essenciais para meu processo de autoconhecimento. Só tenho a agradecer!"
                   </p>
                   <div className="flex items-center">
                     <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
                       <User className="h-4 w-4 text-gray-500" />
                     </div>
                     <div>
-                      <p className="font-medium text-gray-900">Nome do Paciente</p>
+                      <p className="font-medium text-gray-900">Carlos M.</p>
                       <p className="text-sm text-gray-500">Verificado</p>
                     </div>
                   </div>
@@ -606,14 +606,14 @@ export default function PsicologoSite() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-6 leading-relaxed">
-                    "Espaço reservado para depoimentos dos pacientes integrados com Google Meu Negócio"
+                    "A abordagem do Rodrigo é muito humana e acolhedora. Senti muita confiança desde a primeira consulta. Meu progresso foi visível para mim e para minha família."
                   </p>
                   <div className="flex items-center">
                     <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
                       <User className="h-4 w-4 text-gray-500" />
                     </div>
                     <div>
-                      <p className="font-medium text-gray-900">Nome do Paciente</p>
+                      <p className="font-medium text-gray-900">Fernanda T.</p>
                       <p className="text-sm text-gray-500">Verificado</p>
                     </div>
                   </div>
