@@ -31,10 +31,6 @@ import Image from "next/image"
 import { useEffect } from "react"
 
 export default function PsicologoSite() {
-  const whatsappNumber = "5566999791304"
-  const whatsappMessage = "Olá! Gostaria de agendar uma consulta com o psicólogo Rodrigo Lübke."
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`
-
   useEffect(() => {
     // Smooth scroll behavior
     document.documentElement.style.scrollBehavior = "smooth"
@@ -85,16 +81,15 @@ export default function PsicologoSite() {
 
             {/* CTA Button */}
             <div className="hidden lg:block">
-              <Button
-                className="text-white px-6 py-2 rounded-lg font-medium transition-all duration-300"
-                style={{ backgroundColor: "#002147" }}
-                onClick={() => window.open(whatsappUrl, "_blank")}
-                onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => (e.currentTarget.style.backgroundColor = "#001a36")}
-                onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => (e.currentTarget.style.backgroundColor = "#002147")}
-              >
-                <MessageCircle className="mr-2 h-4 w-4" />
-                Agendar Consulta
-              </Button>
+              <a href={`https://wa.me/5566999791304?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20psicoterapia.`} target="_blank" rel="noopener noreferrer">
+                <Button
+                  className="text-white px-6 py-2 rounded-lg font-medium transition-all duration-300"
+                  style={{ backgroundColor: "#002147" }}
+                >
+                  <MessageCircle className="mr-2 h-4 w-4" />
+                  Agendar Consulta
+                </Button>
+              </a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -148,14 +143,15 @@ export default function PsicologoSite() {
                 FAQ
               </a>
               <div className="pt-4 border-t border-gray-100">
-                <Button
-                  className="w-full text-white px-6 py-2 rounded-lg font-medium"
-                  style={{ backgroundColor: "#002147" }}
-                  onClick={() => window.open(whatsappUrl, "_blank")}
-                >
-                  <MessageCircle className="mr-2 h-4 w-4" />
-                  Agendar Consulta
-                </Button>
+                <a href={`https://wa.me/5566999791304?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20psicoterapia.`} target="_blank" rel="noopener noreferrer">
+                  <Button
+                    className="w-full text-white px-6 py-2 rounded-lg font-medium"
+                    style={{ backgroundColor: "#002147" }}
+                  >
+                    <MessageCircle className="mr-2 h-4 w-4" />
+                    Agendar Consulta
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
@@ -186,17 +182,16 @@ export default function PsicologoSite() {
                 <p className="text-xl lg:text-2xl text-gray-600 mb-10 font-light leading-relaxed">
                   Recupere o equilíbrio emocional com clareza e leveza
                 </p>
-                <Button
-                  size="lg"
-                  className="text-white px-8 py-4 text-lg font-medium rounded-lg transition-all duration-300"
-                  style={{ backgroundColor: "#002147" }}
-                  onClick={() => window.open(whatsappUrl, "_blank")}
-                  onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => (e.currentTarget.style.backgroundColor = "#001a36")}
-                  onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => (e.currentTarget.style.backgroundColor = "#002147")}
-                >
-                  <MessageCircle className="mr-2 h-5 w-5" />
-                  Agendar consulta
-                </Button>
+                <a href={`https://wa.me/5566999791304?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20psicoterapia.`} target="_blank" rel="noopener noreferrer">
+                  <Button
+                    size="lg"
+                    className="text-white px-8 py-4 text-lg font-medium rounded-lg transition-all duration-300"
+                    style={{ backgroundColor: "#002147" }}
+                  >
+                    <MessageCircle className="mr-2 h-5 w-5" />
+                    Agendar consulta
+                  </Button>
+                </a>
               </div>
 
               {/* Área da Foto - Lado Direito */}
@@ -320,17 +315,16 @@ export default function PsicologoSite() {
           </div>
 
           <div className="text-center">
-            <Button
-              size="lg"
-              className="text-white px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-medium rounded-lg transition-all duration-300"
-              style={{ backgroundColor: "#002147" }}
-              onClick={() => window.open(whatsappUrl, "_blank")}
-              onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => (e.currentTarget.style.backgroundColor = "#001a36")}
-              onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => (e.currentTarget.style.backgroundColor = "#002147")}
-            >
-              <MessageCircle className="mr-2 h-5 w-5" />
-              Agendar consulta
-            </Button>
+            <a href={`https://wa.me/5566999791304?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20psicoterapia.`} target="_blank" rel="noopener noreferrer">
+              <Button
+                size="lg"
+                className="text-white px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-medium rounded-lg transition-all duration-300"
+                style={{ backgroundColor: "#002147" }}
+              >
+                <MessageCircle className="mr-2 h-5 w-5" />
+                Agendar consulta
+              </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -413,23 +407,16 @@ export default function PsicologoSite() {
       </div>
 
       <div className="text-center">
-        <Button
-          variant="outline"
-          size="lg"
-          className="px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-medium rounded-lg transition-all duration-300"
-          style={{ borderColor: "#002147", color: "#002147" }}
-          onClick={() => window.open(whatsappUrl, "_blank")}
-          onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => {
-            e.currentTarget.style.backgroundColor = "#002147"
-            e.currentTarget.style.color = "white"
-          }}
-          onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => {
-            e.currentTarget.style.backgroundColor = "transparent"
-            e.currentTarget.style.color = "#002147"
-          }}
-        >
-          Conheça os diferenciais
-        </Button>
+        <a href={`https://wa.me/5566999791304?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20psicoterapia.`} target="_blank" rel="noopener noreferrer">
+          <Button
+            variant="outline"
+            size="lg"
+            className="px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-medium rounded-lg transition-all duration-300"
+            style={{ borderColor: "#002147", color: "#002147" }}
+          >
+            Conheça os diferenciais
+          </Button>
+        </a>
       </div>
     </div>
   </div>
@@ -482,17 +469,16 @@ export default function PsicologoSite() {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                  <Button
-                    size="lg"
-                    className="text-white px-8 py-4 text-lg font-medium rounded-lg transition-all duration-300"
-                    style={{ backgroundColor: "#002147" }}
-                    onClick={() => window.open(whatsappUrl, "_blank")}
-                    onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => (e.currentTarget.style.backgroundColor = "#001a36")}
-                    onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => (e.currentTarget.style.backgroundColor = "#002147")}
-                  >
-                    <MessageCircle className="mr-2 h-5 w-5" />
-                    Agendar consulta
-                  </Button>
+                  <a href={`https://wa.me/5566999791304?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20psicoterapia.`} target="_blank" rel="noopener noreferrer">
+                    <Button
+                      size="lg"
+                      className="text-white px-8 py-4 text-lg font-medium rounded-lg transition-all duration-300"
+                      style={{ backgroundColor: "#002147" }}
+                    >
+                      <MessageCircle className="mr-2 h-5 w-5" />
+                      Agendar consulta
+                    </Button>
+                  </a>
                
                 </div>
               </div>
@@ -706,17 +692,16 @@ export default function PsicologoSite() {
             </Accordion>
 
             <div className="text-center">
-              <Button
-                size="lg"
-                className="text-white px-8 py-4 text-lg font-medium rounded-lg transition-all duration-300"
-                style={{ backgroundColor: "#002147" }}
-                onClick={() => window.open(whatsappUrl, "_blank")}
-                onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => (e.currentTarget.style.backgroundColor = "#001a36")}
-                onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => (e.currentTarget.style.backgroundColor = "#002147")}
-              >
-                <MessageCircle className="mr-2 h-5 w-5" />
-               Agendar consulta
-              </Button>
+              <a href={`https://wa.me/5566999791304?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20psicoterapia.`} target="_blank" rel="noopener noreferrer">
+                <Button
+                  size="lg"
+                  className="text-white px-8 py-4 text-lg font-medium rounded-lg transition-all duration-300"
+                  style={{ backgroundColor: "#002147" }}
+                >
+                  <MessageCircle className="mr-2 h-5 w-5" />
+                 Agendar consulta
+                </Button>
+              </a>
             </div>
           </div>
         </div>
